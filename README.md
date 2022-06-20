@@ -1,2 +1,2 @@
 # Seriones-Martinez-Burgos
-Código html de la primer entrega
+Código HTML y CSS de la segunda entrega
