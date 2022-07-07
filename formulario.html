@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos.css/styles.css">
+</head>
+<body class="fondo">
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" width="30px" height="30px"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Página principal</a></li>
+                <li><a href="./formulario.html">Iniciar sesion / Registrarse</a></li>
+                <li><a href="./nosotros.html">¿Quiénes somos?</a></li>
+                <li><a href="./catalogo.html">Catálogo de series</a></li>
+                <li><a href="./amigos.html">Amigos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="formulario">
+            <span>Iniciar sesion</span>
+            <br>
+            <label for="nombre-usuario">
+                <span> Nombre de usuario:</span> 
+                <input type="text" name="nombre-usuario">
+            </label>
+            <label for="contraseña">
+                <span>Contraseña:</span>
+                <input type="password" name="contraseña"> 
+            </label>
+            <button class= "boton2"> Enviar </button>
+        </form>
+        <div class="separador">
+            <hr>
+            <span>¿Todavía no tiene un usuario?</span>
+            <hr>
+        </div>
+        <form action="" class="formulario">
+            <p>Registrarse</p>
+            <br>
+            <label for="email">
+                <span>Gmail:</span>
+                <input type="email" name="email">
+            </label>
+            <label for="nombre-usuario">
+                <span>Nombre de usuario:</span>
+                <input type="text" name="nombre-usuario">
+            </label>
+            <label for="contraseña">
+                <span>Contraseña:</span>
+            <input type="password" name="contraseña">
+            </label>
+            <label for="checkbox">
+                <span>Acepte bases y condiciones</span>
+                <input type="checkbox" name="aceptar" value="1" id="check"> 
+            </label>
+            <button class= "boton2"> Enviar </button>
+        </form>
+    </main>
+    <footer class="footer2">
+        <p>Bases y condiciones</p>
+    </footer>
+</body>
+</html>
