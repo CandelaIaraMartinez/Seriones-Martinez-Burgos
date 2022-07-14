@@ -10,17 +10,45 @@
 <body>
     <section class="grid">
         <header>
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" width="30px" height="30px"></label>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="./index.html">Página principal</a></li>
-                        <li><a href="./formulario.html">Iniciar sesion / Registrarse</a></li>
-                        <li><a href="./nosotros.html">¿Quiénes somos?</a></li>
-                        <li><a href="./catalogo.html">Catálogo de series</a></li>
-                        <li><a href="./amigos.html">Amigos</a></li>
-                    </ul>
-                </nav>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-outline-secondary navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded=false aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <a class="navbar-brand">
+                            <img src="http://cdn.onlinewebfonts.com/svg/img_95123.png" width="80" height="60" alt="">
+                        </a>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Catálogo de series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Amigos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Iniciar sesión / Registrarse</a>
+                            </li>
+                        </ul>
+                        <hr class="text-black-50">
+                            <ul class="navbar-nav flex-row flex-wrap text-dark">
+                                <li class="nav-item col-6 col-md-auto p-3">
+                                    <a class="bi bi-twitter"> <img src="https://cdn-icons-png.flaticon.com/512/81/81725.png" width="30" height="30"> </a>
+                                </li>
+                                <li class="nav-item col-6 col-md-auto p-3">
+                                    <a class="bi bi-twitch"> <img src="https://entrevinetas.cl/wp-content/uploads/2021/04/twitch.png" width="30" height="30"> </a>
+                                </li>
+                                <li class="nav-item col-6 col-md-auto p-3">
+                                    <a class="bi bi-instagram"> <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30" height="30"> </a>
+                                </li>
+                            </ul>
+                        </hr>
+                    </div>
+               </div>
+            </nav>
         </header>
         <div class="titulo">
             <h1>Seriones</h1>
