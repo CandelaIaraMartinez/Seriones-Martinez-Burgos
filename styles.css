@@ -55,41 +55,12 @@ header{
     background: var(--secondary);
 }
 
-#btn-menu{
-    display: none;
+.nav-link{
+  color: black
 }
 
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-}
-
-header label:hover{
-    cursor: pointer;
-    background: rgb(116, 2, 2);
-}
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    font-family: var(--font-principal);
-    font-size: var(--text-small);
-    flex-direction: row;
-}
-
-.menu li a{
-    display: block;
-    padding: 15px 20px;
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.menu li:hover{
-    background:  rgb(165, 1, 1);
+.nav-link:hover{
+  color:red
 }
 
 .titulo{
