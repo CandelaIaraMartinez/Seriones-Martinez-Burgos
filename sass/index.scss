@@ -1,0 +1,103 @@
+@import "misc/variables";
+@import "partials/header/header.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+        "menu      menu" 
+        "titulo    boton"
+        "subtitulo boton"
+        "footer    footer";
+    grid-template-rows: 1fr, auto, auto, 1fr;
+    grid-template-columns: 2fr, auto;
+    align-items: center;
+    justify-items: center;
+    row-gap: 70px;
+
+    & header{
+        grid-area: menu;
+        width: 100%;
+        height: 100%;
+        background: $secondary;
+    }
+
+    & footer{
+        grid-area: footer;
+        font-family: $font-principal;
+        color: $primary;  
+        font-size: $text-small;
+        position: relative;
+        bottom: 0;
+    }
+
+    & .titulo{
+        grid-area: titulo;
+        text-transform: uppercase;
+        color: $secondary;
+        font-family: $font-title;
+        font-size:$text-large;
+        justify-self: start;
+        align-self: end;
+        padding-left: 30px;
+    }
+    
+    & .subtitulo{
+        grid-area: subtitulo;
+        font-size: $text-medium;
+        color: $primary;
+        font-family: $font-principal;
+        justify-self: start;
+        align-self: start;
+        padding-left: 30px;
+    }
+    
+    & .boton{
+        grid-area: boton;
+        align-self: center;
+        justify-self: center;
+        & :hover{
+            animation: rotar 1s;
+        }
+    }
+}
+
+@keyframes rotar{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+
+@media screen and (max-width: 630px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+            "menu"
+            "titulo"
+            "subtitulo"
+            "boton"
+            "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 0.5fr, 1fr, 1fr, 1fr, 0.5fr;
+        max-width: fit-content;
+
+        & .titulo{
+            justify-self: center;
+            align-self: center;
+            margin-right: 10px;
+        }
+
+        & .subtitulo{
+            justify-self: center;
+            align-self: center;
+        }
+    
+        & .footer{
+            position: relative;
+            bottom: 0;
+        }
+    }
+}
