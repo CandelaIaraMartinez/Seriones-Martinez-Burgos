@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*Colores*/
+/*Espacios*/
+/*Fuentes*/
+/*Tamaños de fuente*/
+@import "//sass/misc/variables";
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  flex-direction: row;
+}
+.menu ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+}
+.menu ul li :hover {
+  background-color: rgb(165, 1, 1);
+}
+
+#btn-menu {
+  display: none;
+}
+
+@media screen and (max-width: 989px) {
+  #btn-menu {
+    display: block;
+    padding: 10px;
+  }
+  .menu ul {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "menu      menu" "titulo    boton" "subtitulo boton" "footer    footer";
+  grid-template-rows: 1fr, auto, auto, 1fr;
+  grid-template-columns: 2fr, auto;
+  align-items: center;
+  justify-items: center;
+  row-gap: 70px;
+}
+.grid header {
+  grid-area: menu;
+  width: 100%;
+  height: 100%;
+  background: rgb(148, 0, 0);
+}
+.grid footer {
+  grid-area: footer;
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+}
+.grid .titulo {
+  grid-area: titulo;
+  text-transform: uppercase;
+  color: rgb(148, 0, 0);
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  justify-self: start;
+  align-self: end;
+  padding-left: 30px;
+}
+.grid .subtitulo {
+  grid-area: subtitulo;
+  font-size: 2rem;
+  color: black;
+  font-family: "Lato", sans-serif;
+  justify-self: start;
+  align-self: start;
+  padding-left: 30px;
+}
+.grid .boton {
+  grid-area: boton;
+  align-self: center;
+  justify-self: center;
+}
+.grid .boton :hover {
+  -webkit-animation: rotar 1s;
+          animation: rotar 1s;
+}
+
+@-webkit-keyframes rotar {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@media screen and (max-width: 630px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "menu" "titulo" "subtitulo" "boton" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr, 1fr, 1fr, 1fr, 0.5fr;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .grid .titulo {
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+  }
+  .grid .subtitulo {
+    justify-self: center;
+    align-self: center;
+  }
+  .grid .footer {
+    position: relative;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=index.css.map */
