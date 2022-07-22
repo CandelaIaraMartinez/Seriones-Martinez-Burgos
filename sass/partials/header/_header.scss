@@ -1,0 +1,38 @@
+@import "//sass/misc/variables";
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-family: $font-principal;
+    font-size: $text-small;
+    flex-direction: row;
+
+        li a{
+    display: block;
+    padding: 15px 20px;
+    color: $primary;
+    text-decoration: none; 
+        }
+
+        li :hover{
+            background-color:rgb(165, 1, 1);
+        }
+
+}
+
+#btn-menu{
+    display: none;
+}
+
+@media screen and (max-width: 989px){
+    #btn-menu{
+        display: block;
+        padding: 10px;
+    }
+    
+    .menu ul{
+        display: none;
+    }
+}
