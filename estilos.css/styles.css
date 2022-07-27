@@ -19,3 +19,26 @@ h1{
 h2{
     font-family: var(--font-principal);
 }
+
+#boton :hover {
+    -webkit-animation: rotar 1s;
+            animation: rotar 1s;
+}
+
+@-webkit-keyframes rotar {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
