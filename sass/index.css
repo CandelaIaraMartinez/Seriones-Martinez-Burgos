@@ -6,6 +6,10 @@
 /*Fuentes*/
 /*Tamaños de fuente*/
 @import "//sass/misc/variables";
+@import "//sass/misc/variables";
+.menu {
+  background-color: white;
+}
 .menu ul {
   margin: 0;
   list-style: none;
@@ -25,19 +29,55 @@
   background-color: rgb(165, 1, 1);
 }
 
-#btn-menu {
+.redes {
   display: none;
 }
 
+#btn-twitter {
+  background-color: #55acee;
+  border-radius: 20px;
+}
+
+#btn-facebook {
+  background-color: #3a5795;
+  border-radius: 20px;
+}
+
+#btn-instagram {
+  background-color: purple;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 989px) {
-  #btn-menu {
-    display: block;
-    padding: 10px;
+  .redes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .menu ul {
     display: none;
   }
 }
+footer {
+  grid-area: footer;
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  bottom: 0;
+}
+
+.footer2 {
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  color: black;
+  display: block;
+  position: relative;
+  bottom: 0;
+  margin-left: 43%;
+  margin-top: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +108,7 @@
 }
 .grid .titulo {
   grid-area: titulo;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: rgb(148, 0, 0);
   font-family: "Poppins", sans-serif;
   font-size: 5rem;
