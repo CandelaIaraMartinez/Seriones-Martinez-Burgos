@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*Colores*/
+/*Espacios*/
+/*Fuentes*/
+/*Tamaños de fuente*/
+footer {
+  grid-area: footer;
+  font-family: "Lato", sans-serif;
+  color: black;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 0;
+}/*# sourceMappingURL=footer.css.map */
