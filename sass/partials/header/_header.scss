@@ -1,6 +1,9 @@
 @import "//sass/misc/variables";
 
-.menu ul{
+.menu{
+    background-color: white;
+
+    & ul{
     margin: 0;
     list-style: none;
     padding: 0;
@@ -19,17 +22,31 @@
         li :hover{
             background-color:rgb(165, 1, 1);
         }
-
+    }
 }
 
-#btn-menu{
+.redes{
     display: none;
 }
 
+$redes: (
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: purple);
+
+@each $red, $color in $redes{
+    #btn-#{$red}{
+        background-color: $color;
+        border-radius: 20px;
+    }
+}
+
 @media screen and (max-width: 989px){
-    #btn-menu{
-        display: block;
-        padding: 10px;
+    .redes{
+        display:flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     .menu ul{
