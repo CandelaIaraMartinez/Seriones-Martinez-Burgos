@@ -1,0 +1,32 @@
+@import "../misc/mixins";
+@import "../misc/variables";
+@import "../partials/header/header";
+@import "../partials/footer/footer";
+
+.titulo{
+    @extend .titulo;
+}
+
+.imagenes{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    width: 100%;
+
+    & img{
+        object-fit: cover;
+        height: 400px;
+        width: 300px;
+        margin-right: 10px;
+    }
+}
+
+.buscador{
+    @extend .buscador;
+}
+
+#lupa{
+    @extend .lupa;
+}
