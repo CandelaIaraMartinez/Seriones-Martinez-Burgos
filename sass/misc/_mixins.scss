@@ -1,0 +1,49 @@
+@import "./variables";
+
+.buscador{
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border: none;
+    font-family: $font-principal;
+    font-size: $text-small;
+    color: white;
+    background: rgba(7, 7, 7, 0.623);
+    outline: none;
+    display: inline;
+}
+
+.lupa{
+    margin-top: 10px;
+    display: inline;
+}
+
+@mixin botones($color, $fondo, $hover){
+    color: $color;
+    background-color: $fondo;
+    border: none;
+    font-family: $font-principal;
+    font-size: $text-small;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 20px;
+    transition: 1s;
+    position: relative;
+
+    & :hover{
+        cursor: pointer;
+        background-color: $hover;
+        transition: all 1s;
+    }
+}
+
+.titulo{
+    font-size: $text-medium;
+    font-family: $font-principal;
+    color: $secondary;
+    display: block;
+    margin-left: 20px;
+    margin-top: 50px;
+}
