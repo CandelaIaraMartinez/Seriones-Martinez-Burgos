@@ -1,0 +1,29 @@
+@import "//sass/misc/variables";
+
+$estilo: (
+    tamaño: $text-small,
+    color: $primary,
+    fuente: $font-principal,
+    posicion: relative,
+    bottom: 0, 
+);
+
+footer{
+    grid-area: footer;
+    font-family: map-get($estilo, fuente);
+    color: map-get($estilo, color);  
+    font-size: map-get($estilo, tamaño);
+    position: map-get($estilo, podicion);
+    bottom: map-get($estilo, bottom);
+}
+
+.footer2{
+    font-size: map-get($estilo, tamaño);
+    font-family: map-get($estilo, fuente);
+    color: map-get($estilo, color);
+    display: block;
+    position: map-get($estilo, posicion);
+    bottom: map-get($estilo, bottom);
+    margin-left: 43%;
+    margin-top: 50px;
+}
