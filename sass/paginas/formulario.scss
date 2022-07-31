@@ -1,0 +1,63 @@
+@import "../misc/mixins";
+@import "../misc/variables";
+@import "../partials/header/header";
+@import "../partials/footer/footer";
+
+.formulario{
+    background-color: $other;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    font-family: $font-principal; 
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 white;
+    width: fit-content;
+}
+
+.separador{
+    font-family: $font-principal;
+    color: $other;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 50px 50px;
+    gap: 15px;
+        & hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid $other;
+    }
+}
+
+.formulario label{
+    color: rgb(47, 47, 47);
+    justify-self: center;
+    gap: 5px; 
+
+    & input{
+    display: flex;
+    background-color: $other;
+    border: none;
+    border-bottom: 1px solid $primary;    
+    padding: 10px 50px;
+    outline: none;
+    justify-self: left;
+    }
+}
+
+#check{
+    margin: auto;
+    margin-top: 10px;
+    align-self: center;
+    justify-self: center;
+}
+
+.boton{
+    @include botones($primary, $other, rgb(208, 208, 208))
+}
