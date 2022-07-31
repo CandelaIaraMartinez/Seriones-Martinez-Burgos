@@ -1,5 +1,6 @@
-@import "misc/variables";
-@import "partials/header/header.scss";
+@import "./misc/variables";
+@import "./partials/header/header";
+@import "./partials/footer/footer";
 
 *{
     margin: 0;
@@ -37,7 +38,7 @@
 
     & .titulo{
         grid-area: titulo;
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: $secondary;
         font-family: $font-title;
         font-size:$text-large;
