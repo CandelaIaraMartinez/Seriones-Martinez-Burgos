@@ -7,36 +7,41 @@
     <meta name="description" content="Seriones: tu nueva red social de series">
     <meta name="keywords" content="series, red social, seriones, netflix, plataformas, amigos, recomendaciones">
     <title>Seriones - Tu nueva red social de series / Página Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../sass/index.css">
 </head>
 <body>
         <section class="grid">
-            <header>
-                <nav class="menu">
-                    <input type="checkbox" id="check">
-                        <label for="check" id="btn-menu">
-                            <img src="https://www.samueldiosdado.com/wp-content/uploads/2017/08/Men%C3%BA-hamburguesa-herramienta-practica-o-icono-inutil.png" width="30px" height="30px">
-                        </label>
-                <ul>
-                    <li><a href="./index.html">Página principal</a></li>
-                    <li><a href="./paginas.html/formulario.html">Iniciar sesion / Registrarse</a></li>
-                    <li><a href="./paginas.html/nosotros.html">¿Quiénes somos?</a></li>
-                    <li><a href="./paginas.html/catalogo.html">Catálogo de series</a></li>
-                    <li><a href="./paginas.html/amigos.html">Amigos</a></li>
-                    <section class="redes">
-                        <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" width="30px" height="30px" id="btn-facebook">
-                        <img src="https://www.pngmart.com/files/5/Twitter-PNG-Transparent.png" width="30px" height="30px" id="btn-twitter">
-                        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="30px" height="30px" id="btn-instagram">
-                    </section>
-                </ul>
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="./paginas.html/formulario.html">Iniciar sesión / Registrarse</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./paginas.html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./paginas.html/catalogo.html">Catálogo de series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./paginas.html/amigos.html">Amigos</a>
+                    </li>
+                    </ul>
+                </div>
             </nav>
-            </header>
-            <div class="titulo">
-                <h1>Seriones</h1>
-            </div>
-            <div class="subtitulo">
-                <h2>Tu nueva red social de series</h2>
-            </div>
+        </div>
+            <h1 class="titulo">
+                <p>Seriones</p>
+            </h1>
+            <h2 class="subtitulo">
+                <p>Tu nueva red social de series</p>
+            </h2>
             <div class="boton">
                 <img src="https://icones.pro/wp-content/uploads/2021/02/youtube-play-icone.png" width="300px" height="300px">
             </div>
@@ -44,5 +49,7 @@
                 <p>Bases y condiciones</p>
             </footer>
         </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
