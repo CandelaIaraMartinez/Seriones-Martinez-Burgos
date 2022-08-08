@@ -8,8 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "//sass/misc/variables";
-@import "//sass/misc/variables";
 .buscador {
+  margin-top: 30px;
   border-radius: 5px;
   margin-left: 20px;
   padding: 10px 10px;
@@ -40,58 +40,6 @@
 /*Espacios*/
 /*Fuentes*/
 /*Tamaños de fuente*/
-.menu {
-  background-color: white;
-}
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
-  flex-direction: row;
-}
-.menu ul li a {
-  display: block;
-  padding: 15px 20px;
-  color: black;
-  text-decoration: none;
-}
-.menu ul li :hover {
-  background-color: rgb(165, 1, 1);
-}
-
-.redes {
-  display: none;
-}
-
-#btn-twitter {
-  background-color: #55acee;
-  border-radius: 20px;
-}
-
-#btn-facebook {
-  background-color: #3a5795;
-  border-radius: 20px;
-}
-
-#btn-instagram {
-  background-color: purple;
-  border-radius: 20px;
-}
-
-@media screen and (max-width: 989px) {
-  .redes {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .menu ul {
-    display: none;
-  }
-}
 footer {
   grid-area: footer;
   font-family: "Lato", sans-serif;
@@ -132,7 +80,7 @@ footer {
 
 .separador {
   font-family: "Lato", sans-serif;
-  color: rgb(245, 245, 245);
+  color: rgba(26, 25, 25, 0.689);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -142,7 +90,7 @@ footer {
 .separador hr {
   flex-grow: 1;
   border: none;
-  border-top: 1px solid rgb(245, 245, 245);
+  border-top: 1px solid rgb(91, 91, 91);
 }
 
 .formulario label {
@@ -174,10 +122,9 @@ footer {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 5px;
   margin-top: 50px;
-  margin-left: 20px;
   transition: 1s;
   position: relative;
 }
