@@ -1,6 +1,5 @@
 @import "../misc/mixins";
 @import "../misc/variables";
-@import "../partials/header/header";
 @import "../partials/footer/footer";
 
 .formulario{
@@ -22,7 +21,7 @@
 
 .separador{
     font-family: $font-principal;
-    color: $other;
+    color: rgba(26, 25, 25, 0.689);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -31,7 +30,7 @@
         & hr{
     flex-grow: 1;
     border: none;
-    border-top: 1px solid $other;
+    border-top: 1px solid rgb(91, 91, 91);
     }
 }
 
