@@ -12,8 +12,8 @@
 /*Fuentes*/
 /*Tamaños de fuente*/
 @import "//sass/misc/variables";
-@import "//sass/misc/variables";
 .buscador {
+  margin-top: 30px;
   border-radius: 5px;
   margin-left: 20px;
   padding: 10px 10px;
@@ -40,58 +40,6 @@
   margin-top: 50px;
 }
 
-.menu {
-  background-color: white;
-}
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
-  flex-direction: row;
-}
-.menu ul li a {
-  display: block;
-  padding: 15px 20px;
-  color: black;
-  text-decoration: none;
-}
-.menu ul li :hover {
-  background-color: rgb(165, 1, 1);
-}
-
-.redes {
-  display: none;
-}
-
-#btn-twitter {
-  background-color: #55acee;
-  border-radius: 20px;
-}
-
-#btn-facebook {
-  background-color: #3a5795;
-  border-radius: 20px;
-}
-
-#btn-instagram {
-  background-color: purple;
-  border-radius: 20px;
-}
-
-@media screen and (max-width: 989px) {
-  .redes {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .menu ul {
-    display: none;
-  }
-}
 footer {
   grid-area: footer;
   font-family: "Lato", sans-serif;
@@ -119,8 +67,10 @@ main .flexbox {
 }
 
 .nosotros {
+  margin-top: 5%;
+  margin-bottom: 2%;
   font-family: "Poppins", sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
   color: rgb(148, 0, 0);
   text-align: center;
 }
@@ -145,10 +95,9 @@ main .flexbox {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   display: block;
-  padding: 10px 15px;
+  padding: 10px;
   border-radius: 5px;
   margin-top: 50px;
-  margin-left: 20px;
   transition: 1s;
   position: relative;
 }
@@ -156,4 +105,19 @@ main .flexbox {
   cursor: pointer;
   background-color: grey;
   transition: all 1s;
+}
+
+@media screen and (max-width: 450px) {
+  .nosotros {
+    font-size: 4rem;
+  }
+  .intro {
+    font-size: 1rem;
+    padding: 20px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+  .boton {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=nosotros.css.map */
