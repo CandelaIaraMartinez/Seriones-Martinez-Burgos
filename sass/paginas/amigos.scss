@@ -1,6 +1,5 @@
 @import "../misc/mixins";
 @import "../misc/variables";
-@import "../partials/header/header";
 @import "../partials/footer/footer";
 
 .buscador{
@@ -30,5 +29,5 @@
 }
 
 .boton{
-    @include botones(rgb(230, 230, 230), rgba(7, 7, 7, 0.623), rgba(35, 35, 35, 0.792))
+    @include botones(rgb(230, 230, 230), rgba(7, 7, 7, 0.623), rgba(35, 35, 35, 0.792));
 }
