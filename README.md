@@ -1,2 +1,2 @@
 # Seriones-Martinez-Burgos
-Código HTML y CSS de la tercera entrega obligatoria.
+Código HTML, CSS y SASS de la tercera entrega final.
